@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Sengar — Computer Science Major &amp; Builder</title>
+  <meta name="description" content="Personal portfolio of Vaibhav Sengar — Computer Science Major, Developer and Builder based in India. Crafting digital products, web experiences and experiments.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2308090b'/><text x='16' y='22' font-family='sans-serif' font-size='16' font-weight='bold' fill='%230062ff' text-anchor='middle'>VS</text></svg>">
+  
+  <!-- Google Fonts: Inter (Primary) & Space Grotesk / JetBrains Mono (Technical / Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor System -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-counter" id="preloaderCounter">00%</div>
+      <div class="preloader-brand">
+        <span class="mono">SYSTEM_INIT //</span>
+        <span>VAIBHAV SENGAR</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloaderBarFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header / Mobile Navigation Trigger -->
+  <header class="site-header">
+    <a href="#hero" class="brand-mark magnetic" data-magnetic>
+      <span class="brand-text">VAIBHAV SENGAR</span>
+      <span class="status-pulse" title="Available for projects"></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#work" class="mobile-link"><span class="mono-num">01</span> / WORK</a></li>
+        <li><a href="#about" class="mobile-link"><span class="mono-num">02</span> / ABOUT</a></li>
+        <li><a href="#stack" class="mobile-link"><span class="mono-num">03</span> / STACK</a></li>
+        <li><a href="#education" class="mobile-link"><span class="mono-num">04</span> / EDUCATION</a></li>
+        <li><a href="#experiments" class="mobile-link"><span class="mono-num">05</span> / EXPERIMENTS</a></li>
+        <li><a href="#contact" class="mobile-link"><span class="mono-num">06</span> / CONTACT</a></li>
+      </ul>
+      <div class="mobile-nav-meta">
+        <div class="mono-tag">BASED IN INDIA // 2026</div>
+        <div class="mono-tag">vaibhavsengar02@gmail.com</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="page-wrapper">
+
+    <!-- 01 // HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-left">
+        <!-- Top Identity & Desktop Nav -->
+        <div class="hero-top">
+          <div class="hero-logo-box">
+            <span class="logo-title font-display">VAIBHAV SENGAR</span>
+            <span class="logo-subtitle mono">PORTFOLIO EDITION // 2026</span>
+          </div>
+
+          <nav class="hero-desktop-nav" id="desktopNav">
+            <ul>
+              <li>
+                <a href="#work" class="nav-item magnetic" data-nav="work" data-magnetic>
+                  <span class="nav-num mono">01</span>
+                  <span class="nav-slash">/</span>
+                  <span class="nav-label">WORK</span>
+                  <span class="nav-indicator"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#about" class="nav-item magnetic" data-nav="about" data-magnetic>
+                  <span class="nav-num mono">02</span>
+                  <span class="nav-slash">/</span>
+                  <span class="nav-label">ABOUT</span>
+                  <span class="nav-indicator"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#stack" class="nav-item magnetic" data-nav="stack" data-magnetic>
+                  <span class="nav-num mono">03</span>
+                  <span class="nav-slash">/</span>
+                  <span class="nav-label">STACK</span>
+                  <span class="nav-indicator"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-item magnetic" data-nav="contact" data-magnetic>
+                  <span class="nav-num mono">04</span>
+                  <span class="nav-slash">/</span>
+                  <span class="nav-label">CONTACT</span>
+                  <span class="nav-indicator"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Hero Main Statement & Headings -->
+        <div class="hero-center">
+          <div class="hero-kicker reveal-item">
+            <span class="kicker-line"></span>
+            <span class="mono kicker-text">COMPUTER SCIENCE &bull; CREATIVE BUILDER</span>
+          </div>
+
+          <h1 class="hero-title reveal-item">
+            <span class="title-line font-display">COMPUTER SCIENCE</span>
+            <span class="title-line font-display title-builder">MAJOR &amp; BUILDER</span>
+          </h1>
+
+          <div class="hero-credentials reveal-item">
+            <p class="credential-item">
+              <span class="bullet">&bull;</span> Diploma in Computer Science
+            </p>
+            <p class="credential-item">
+              <span class="bullet">&bull;</span> Currently pursuing B.Tech in Computer Science
+            </p>
+          </div>
+
+          <p class="hero-intro reveal-item">
+            I build digital products, web experiences and experiments at the intersection of technology and creativity.
+          </p>
+
+          <div class="hero-actions reveal-item">
+            <a href="#work" class="btn btn-primary magnetic" data-magnetic>
+              <span>VIEW WORK</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary magnetic" data-magnetic>
+              <span>CONTACT ME</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2.5 4.5H13.5V11.5H2.5V4.5Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2.5 5L8 9L13.5 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Metadata -->
+        <div class="hero-bottom reveal-item">
+          <div class="meta-item">
+            <span class="meta-label mono">LOCATION</span>
+            <span class="meta-val">BASED IN INDIA</span>
+          </div>
+          <div class="meta-divider">/</div>
+          <div class="meta-item">
+            <span class="meta-label mono">ROLE</span>
+            <span class="meta-val">DEVELOPER / BUILDER</span>
+          </div>
+          <div class="meta-divider">/</div>
+          <div class="meta-item">
+            <span class="meta-label mono">EDITION</span>
+            <span class="meta-val mono">2026</span>
+          </div>
+          <div class="meta-divider">/</div>
+          <div class="meta-item status-item">
+            <span class="status-indicator"></span>
+            <span class="meta-val mono">OPEN TO ROLES</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Editorial Portrait Occupying Full Height -->
+      <div class="hero-right" id="heroPortraitContainer">
+        <div class="portrait-stage" id="portraitStage">
+          <!-- Subtle technical coordinates overlay -->
+          <div class="portrait-tech-meta mono" aria-hidden="true">
+            <span class="coord-tag">LOC: 28.4744&deg; N, 77.5040&deg; E</span>
+            <span class="coord-tag">ARCH: x86_64 // NEURAL</span>
+          </div>
+
+          <!-- Main Portrait Image -->
+          <div class="portrait-image-wrapper" id="portraitWrapper">
+            <img 
+              src="assets/vaibhav.jpg" 
+              alt="Vaibhav Sengar — Computer Science Major &amp; Builder" 
+              class="hero-portrait-img"
+              id="heroPortrait"
+              loading="eager"
+              decoding="async"
+            >
+            <div class="portrait-gradient-blend"></div>
+            <div class="portrait-light-accent"></div>
+          </div>
+
+          <!-- Editorial Technical Tag at base -->
+          <div class="portrait-footer-tag mono" aria-hidden="true">
+            <span class="tag-accent">//</span> VAIBHAV SENGAR &bull; STIPPLE RENDER v2.6
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 // ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-header" data-scroll-reveal>
+          <div class="section-meta mono">
+            <span class="section-num">02</span>
+            <span class="section-label">/ IDENTITY &bull; PHILOSOPHY</span>
+          </div>
+          <h2 class="section-title-sub mono">ABOUT THE BUILDER</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-lead-col" data-scroll-reveal>
+            <h3 class="about-statement font-display">
+              &ldquo;I like turning ideas into things that actually work.&rdquo;
+            </h3>
+            <div class="about-status-card">
+              <div class="status-card-header mono">
+                <span class="status-dot-blue"></span>
+                <span>CURRENT ENGAGEMENT</span>
+              </div>
+              <p class="status-card-body">
+                Computer Science student at Maharishi University of Information Technology. Focusing on deep core fundamentals, responsive modern web architecture, and intuitive human-first interfaces.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-content-col" data-scroll-reveal>
+            <p class="editorial-p">
+              I work with programming, web technologies, APIs and digital products. Rather than just writing syntax, I approach development as a craft of systems design — creating high-utility tools, reliable client-server architectures, and digital experiences that feel swift, tactile, and dependable.
+            </p>
+            <p class="editorial-p text-muted">
+              From building real-time weather dashboards and automated news feeds to architecting custom web productivity suites and exploratory UI prototypes, I continuously ship code that bridges algorithmic logic with clean interaction design.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <span class="highlight-number font-display">12+</span>
+                <span class="highlight-label mono">PROJECTS SHIPPED</span>
+                <span class="highlight-sub">From full apps to prototypes</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number font-display">03</span>
+                <span class="highlight-label mono">HACKATHONS &amp; AWARDS</span>
+                <span class="highlight-sub">3rd Place NeuraHack 2025</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number font-display">100%</span>
+                <span class="highlight-label mono">BUILDER MINDSET</span>
+                <span class="highlight-sub">Obsessed with shipping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 // SELECTED WORK SECTION -->
+    <section class="section work-section" id="work">
+      <div class="section-container">
+        <div class="section-header" data-scroll-reveal>
+          <div class="section-meta mono">
+            <span class="section-num">01</span>
+            <span class="section-label">/ SELECTED WORKS</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title font-display">FEATURED PROJECTS</h2>
+            <span class="section-count mono">[ 08 ARCHIVED BUILDS ]</span>
+          </div>
+        </div>
+
+        <div class="work-showcase">
+
+          <!-- Project 01: MeraGagan -->
+          <article class="project-card" data-scroll-reveal>
+            <div class="project-header">
+              <div class="project-meta-left">
+                <span class="project-num mono font-display">01</span>
+                <span class="project-category mono">WEB APPLICATION // API INTEGRATION</span>
+              </div>
+              <span class="project-status mono">SHIPPED</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-info">
+                <h3 class="project-title font-display">MeraGagan</h3>
+                <p class="project-subhead mono">Interactive Meteorological &amp; Weather Dashboard</p>
+                <p class="project-desc">
+                  A high-fidelity weather dashboard delivering real-time atmospheric metrics, forecast modeling, responsive temperature mapping, and adaptive visual states derived from live weather APIs.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">OpenWeather API</span>
+                  <span class="tag">HTML5 / CSS3</span>
+                  <span class="tag">Asynchronous Fetch</span>
+                </div>
+                <div class="project-cta-wrap">
+                  <a href="https://github.com/VAIBHAV-SENGAR-Git" target="_blank" rel="noopener noreferrer" class="project-btn magnetic" data-magnetic>
+                    <span>VIEW REPOSITORY</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-visual">
+                <div class="visual-canvas meteorological-canvas">
+                  <div class="canvas-decorations">
+                    <span class="canvas-grid-line"></span>
+                    <span class="canvas-coord mono">LAT 28.5 &bull; LON 77.4</span>
+                    <span class="canvas-metric mono">AIR: 1013 hPa &bull; LIVE</span>
+                  </div>
+                  <div class="canvas-centerpiece">
+                    <div class="weather-symbol">
+                      <div class="radar-circle circle-1"></div>
+                      <div class="radar-circle circle-2"></div>
+                      <div class="radar-circle circle-3"></div>
+                      <div class="radar-crosshair"></div>
+                    </div>
+                    <div class="canvas-display-title font-display">MeraGagan</div>
+                    <div class="canvas-display-sub mono">LIVE WEATHER SYSTEM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Real Time News Feed (SengarNews) -->
+          <article class="project-card" data-scroll-reveal>
+            <div class="project-header">
+              <div class="project-meta-left">
+                <span class="project-num mono font-display">02</span>
+                <span class="project-category mono">DATA FEED // API ENGINE</span>
+              </div>
+              <span class="project-status mono">SHIPPED</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-info">
+                <h3 class="project-title font-display">Real Time News Feed</h3>
+                <p class="project-subhead mono">Live Multi-Category News Aggregation Engine</p>
+                <p class="project-desc">
+                  An automated news dissemination feed pulling worldwide headlines in real-time. Features dynamic category filtering, search querying, debounced API consumption, and clean editorial card architecture.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">REST API</span>
+                  <span class="tag">Vanilla JS</span>
+                  <span class="tag">CSS Grid / Flex</span>
+                  <span class="tag">JSON Parsing</span>
+                </div>
+                <div class="project-cta-wrap">
+                  <a href="https://github.com/VAIBHAV-SENGAR-Git" target="_blank" rel="noopener noreferrer" class="project-btn magnetic" data-magnetic>
+                    <span>VIEW REPOSITORY</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-visual">
+                <div class="visual-canvas newsfeed-canvas">
+                  <div class="canvas-decorations">
+                    <span class="canvas-metric mono">STATUS: 200 OK &bull; FEED ACTIVE</span>
+                    <span class="canvas-coord mono">FREQ: 15s SYNC</span>
+                  </div>
+                  <div class="canvas-centerpiece">
+                    <div class="ticker-box">
+                      <div class="ticker-line-item mono">&gt; GLOBAL DISPATCH LOADED</div>
+                      <div class="ticker-line-item mono">&gt; FETCHING CATEGORY [TECH]</div>
+                      <div class="ticker-line-item mono ticker-highlight">&gt; 128 ARTICLES PARSED</div>
+                    </div>
+                    <div class="canvas-display-title font-display">SengarNews</div>
+                    <div class="canvas-display-sub mono">GLOBAL FEED STREAM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Sarvagya / Apram -->
+          <article class="project-card" data-scroll-reveal>
+            <div class="project-header">
+              <div class="project-meta-left">
+                <span class="project-num mono font-display">03</span>
+                <span class="project-category mono">UI PROTOTYPE // SOCIAL SYSTEM</span>
+              </div>
+              <span class="project-status mono">PROTOTYPE</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-info">
+                <h3 class="project-title font-display">Sarvagya / Apram</h3>
+                <p class="project-subhead mono">Modern Social Media Interaction Architecture</p>
+                <p class="project-desc">
+                  An exploratory social media frontend designed with micro-interactions, rich multimedia feed hierarchy, instant engagement loops, modular component layouts, and sleek dark aesthetic.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">UI/UX Design</span>
+                  <span class="tag">Modern JavaScript</span>
+                  <span class="tag">Interactive Components</span>
+                  <span class="tag">CSS Architecture</span>
+                </div>
+                <div class="project-cta-wrap">
+                  <a href="https://github.com/VAIBHAV-SENGAR-Git" target="_blank" rel="noopener noreferrer" class="project-btn magnetic" data-magnetic>
+                    <span>EXPLORE PROJECT</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-visual">
+                <div class="visual-canvas social-canvas">
+                  <div class="canvas-decorations">
+                    <span class="canvas-coord mono">CANVAS // FEED_v1.0</span>
+                    <span class="canvas-metric mono">NODES: 2.4K CONNECTIONS</span>
+                  </div>
+                  <div class="canvas-centerpiece">
+                    <div class="social-wireframe">
+                      <div class="wire-avatar"></div>
+                      <div class="wire-lines">
+                        <span class="wire-l1"></span>
+                        <span class="wire-l2"></span>
+                      </div>
+                    </div>
+                    <div class="canvas-display-title font-display">Sarvagya</div>
+                    <div class="canvas-display-sub mono">NEXT-GEN SOCIAL UI</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: KaryaOS -->
+          <article class="project-card" data-scroll-reveal>
+            <div class="project-header">
+              <div class="project-meta-left">
+                <span class="project-num mono font-display">04</span>
+                <span class="project-category mono">SYSTEM INTERFACE // WORKSPACE</span>
+              </div>
+              <span class="project-status mono">BUILDING</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-info">
+                <h3 class="project-title font-display">KaryaOS</h3>
+                <p class="project-subhead mono">Web-Based Minimalist Operating Environment</p>
+                <p class="project-desc">
+                  A desktop-inspired browser operating surface engineered with window management, draggable task panes, localized app state, productivity utilities, and a keyboard-first command palette.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">DOM Manipulation</span>
+                  <span class="tag">Window State</span>
+                  <span class="tag">Modular JavaScript</span>
+                  <span class="tag">CSS Custom Properties</span>
+                </div>
+                <div class="project-cta-wrap">
+                  <a href="https://github.com/VAIBHAV-SENGAR-Git" target="_blank" rel="noopener noreferrer" class="project-btn magnetic" data-magnetic>
+                    <span>VIEW REPOSITORY</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-visual">
+                <div class="visual-canvas os-canvas">
+                  <div class="canvas-decorations">
+                    <span class="canvas-metric mono">SYS: KARYA_KERNEL // V0.8</span>
+                    <span class="canvas-coord mono">PID: 4096 ACTIVE</span>
+                  </div>
+                  <div class="canvas-centerpiece">
+                    <div class="terminal-box">
+                      <div class="term-dots"><span></span><span></span><span></span></div>
+                      <div class="term-code mono">vaibhav@karyaOS:~$ boot --workspace</div>
+                    </div>
+                    <div class="canvas-display-title font-display">KaryaOS</div>
+                    <div class="canvas-display-sub mono">WEB DESKTOP SURFACE</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Additional Grid of Essential Projects -->
+          <div class="project-mini-grid">
+            <!-- DinCharya -->
+            <div class="mini-project-card" data-scroll-reveal>
+              <div class="mini-card-top mono">
+                <span>05 // UTILITY</span>
+                <span class="badge">SHIPPED</span>
+              </div>
+              <h4 class="mini-title font-display">DinCharya</h4>
+              <p class="mini-desc">Daily routine scheduler &amp; productivity timeboxer with persistent local storage and habit loops.</p>
+              <div class="mini-stack mono">HTML &bull; CSS &bull; JavaScript</div>
+            </div>
+
+            <!-- MeraSAMAY -->
+            <div class="mini-project-card" data-scroll-reveal>
+              <div class="mini-card-top mono">
+                <span>06 // PRODUCTIVITY</span>
+                <span class="badge">SHIPPED</span>
+              </div>
+              <h4 class="mini-title font-display">MeraSAMAY</h4>
+              <p class="mini-desc">Time tracking, focus interval timer &amp; session analytics suite designed for uninterrupted deep work.</p>
+              <div class="mini-stack mono">Vanilla JS &bull; LocalStorage &bull; UI</div>
+            </div>
+
+            <!-- RangDe -->
+            <div class="mini-project-card" data-scroll-reveal>
+              <div class="mini-card-top mono">
+                <span>07 // CREATIVE TOOL</span>
+                <span class="badge">EXPERIMENT</span>
+              </div>
+              <h4 class="mini-title font-display">RangDe</h4>
+              <p class="mini-desc">Dynamic color palette generator and contrast harmony tool for UI designers and developers.</p>
+              <div class="mini-stack mono">Color Theory &bull; HSL Engine &bull; JS</div>
+            </div>
+
+            <!-- CrypHub -->
+            <div class="mini-project-card" data-scroll-reveal>
+              <div class="mini-card-top mono">
+                <span>08 // CRYPTO / FINTECH</span>
+                <span class="badge">EXPERIMENT</span>
+              </div>
+              <h4 class="mini-title font-display">CrypHub</h4>
+              <p class="mini-desc">Real-time cryptocurrency monitor with price volatility tracking, currency conversions, and live graphs.</p>
+              <div class="mini-stack mono">REST API &bull; Dynamic Charting &bull; JS</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 // TECH STACK SECTION -->
+    <section class="section stack-section" id="stack">
+      <div class="section-container">
+        <div class="section-header" data-scroll-reveal>
+          <div class="section-meta mono">
+            <span class="section-num">03</span>
+            <span class="section-label">/ TECHNOLOGIES &bull; TOOLKIT</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title font-display">ENGINEERING STACK</h2>
+            <span class="section-count mono">[ LANGUAGES &bull; TOOLS &bull; APIS ]</span>
+          </div>
+        </div>
+
+        <!-- Marquee / Ticker of Core Technologies -->
+        <div class="stack-ticker-container" aria-hidden="true">
+          <div class="stack-ticker-track">
+            <span class="ticker-item font-display">PYTHON</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">JAVASCRIPT (ES6+)</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">C++</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">HTML5 / CSS3</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">REST APIS</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">GIT / GITHUB</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">FIREBASE</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">REACT (LEARNING)</span>
+            <span class="ticker-sep">&bull;</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="ticker-item font-display">PYTHON</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">JAVASCRIPT (ES6+)</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">C++</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">HTML5 / CSS3</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">REST APIS</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">GIT / GITHUB</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">FIREBASE</span>
+            <span class="ticker-sep">&bull;</span>
+            <span class="ticker-item font-display">REACT (LEARNING)</span>
+            <span class="ticker-sep">&bull;</span>
+          </div>
+        </div>
+
+        <!-- Structured Category Grid -->
+        <div class="stack-category-grid">
+          <!-- Languages -->
+          <div class="stack-category-card" data-scroll-reveal>
+            <div class="cat-header">
+              <span class="cat-tag mono">[ 01 ] CORE LANGUAGES</span>
+              <span class="cat-icon mono">&lt;/&gt;</span>
+            </div>
+            <ul class="tech-list">
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">Python</span>
+                  <span class="tech-note mono">Scripting, Automation, AI Foundations</span>
+                </div>
+                <span class="tech-level mono">PRIMARY</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">JavaScript (ES6+)</span>
+                  <span class="tech-note mono">Asynchronous, DOM, Event Engines</span>
+                </div>
+                <span class="tech-level mono">PRIMARY</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">HTML5 &amp; CSS3</span>
+                  <span class="tech-note mono">Semantic Architecture, Modern Layouts, Animations</span>
+                </div>
+                <span class="tech-level mono">PRIMARY</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">C++ / C</span>
+                  <span class="tech-note mono">Algorithms, Data Structures, Memory Concepts</span>
+                </div>
+                <span class="tech-level mono">FOUNDATIONAL</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools & Deployment -->
+          <div class="stack-category-card" data-scroll-reveal>
+            <div class="cat-header">
+              <span class="cat-tag mono">[ 02 ] TOOLS &amp; WORKFLOW</span>
+              <span class="cat-icon mono">//</span>
+            </div>
+            <ul class="tech-list">
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">Git &amp; GitHub</span>
+                  <span class="tech-note mono">Version Control, Branching, Collaborative Workflows</span>
+                </div>
+                <span class="tech-level mono">ESSENTIAL</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">VS Code</span>
+                  <span class="tech-note mono">Customized Dev Environment &amp; Terminal Workflows</span>
+                </div>
+                <span class="tech-level mono">ESSENTIAL</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">Firebase</span>
+                  <span class="tech-note mono">Authentication, Firestore, Hosting &amp; Realtime DB</span>
+                </div>
+                <span class="tech-level mono">CLOUD</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">Netlify / Vercel</span>
+                  <span class="tech-note mono">Continuous Deployment, CDN &amp; Production Builds</span>
+                </div>
+                <span class="tech-level mono">DEPLOYMENT</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Specialization & In-Flight Learning -->
+          <div class="stack-category-card" data-scroll-reveal>
+            <div class="cat-header">
+              <span class="cat-tag mono">[ 03 ] APIS &amp; CONTINUOUS LEARNING</span>
+              <span class="cat-icon mono">++</span>
+            </div>
+            <ul class="tech-list">
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">RESTful APIs</span>
+                  <span class="tech-note mono">Endpoint consumption, Authentication, Data Pipelines</span>
+                </div>
+                <span class="tech-level mono">PROFICIENT</span>
+              </li>
+              <li class="tech-item highlight-tech">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">React</span>
+                  <span class="tech-note mono">Component lifecycles, Hooks, State Architecture</span>
+                </div>
+                <span class="tech-level tech-learning mono">ACTIVE LEARNING</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">Modern Web APIs</span>
+                  <span class="tech-note mono">IntersectionObserver, Web Storage, Audio &amp; Canvas</span>
+                </div>
+                <span class="tech-level mono">ADVANCED</span>
+              </li>
+              <li class="tech-item">
+                <div class="tech-name-wrap">
+                  <span class="tech-name">AI Prompt &amp; Tooling</span>
+                  <span class="tech-note mono">AI-assisted engineering, Microsoft AI, HP LIFE Certified</span>
+                </div>
+                <span class="tech-level mono">EXPLORING</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 // EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="section-container">
+        <div class="section-header" data-scroll-reveal>
+          <div class="section-meta mono">
+            <span class="section-num">04</span>
+            <span class="section-label">/ ACADEMICS &bull; MILESTONES</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title font-display">EDUCATION &amp; COURSEWORK</h2>
+            <span class="section-count mono">[ UNIVERSITY ROOTS ]</span>
+          </div>
+        </div>
+
+        <div class="education-layout">
+          <!-- Main Institution Card -->
+          <div class="edu-card main-institution" data-scroll-reveal>
+            <div class="edu-card-top mono">
+              <span class="edu-period">2023 &mdash; 2026</span>
+              <span class="edu-badge mono">CURRENT PROGRAM</span>
+            </div>
+            <h3 class="edu-institution font-display">Maharishi University of Information Technology</h3>
+            
+            <div class="degree-stack">
+              <div class="degree-box">
+                <span class="degree-tag mono">FOUNDATION</span>
+                <h4 class="degree-name">Diploma in Computer Science</h4>
+                <p class="degree-details text-muted">Rigorous foundation in computer architecture, algorithmic reasoning, data structures, and practical software implementation.</p>
+              </div>
+
+              <div class="degree-divider"></div>
+
+              <div class="degree-box highlight-degree">
+                <span class="degree-tag mono text-blue">CURRENT PURSUIT</span>
+                <h4 class="degree-name">B.Tech in Computer Science</h4>
+                <p class="degree-details text-muted">Advanced engineering curriculum focusing on scalable systems, web computing, distributed environments, and software design patterns.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coursework & Certifications -->
+          <div class="edu-card coursework-card" data-scroll-reveal>
+            <div class="edu-card-top mono">
+              <span class="edu-period">CURRICULUM</span>
+              <span class="edu-badge mono">RELEVANT COURSEWORK</span>
+            </div>
+            <h3 class="edu-subtitle font-display">Core Technical Subjects</h3>
+
+            <div class="coursework-tags-grid">
+              <div class="course-chip">
+                <span class="course-code mono">CS-101</span>
+                <span class="course-name">Programming Fundamentals</span>
+              </div>
+              <div class="course-chip">
+                <span class="course-code mono">CS-204</span>
+                <span class="course-name">Operating Systems</span>
+              </div>
+              <div class="course-chip">
+                <span class="course-code mono">CS-302</span>
+                <span class="course-name">Web Technologies</span>
+              </div>
+              <div class="course-chip">
+                <span class="course-code mono">CS-410</span>
+                <span class="course-name">Internet of Things (IoT)</span>
+              </div>
+              <div class="course-chip">
+                <span class="course-code mono">CS-215</span>
+                <span class="course-name">Data Structures &amp; OOP</span>
+              </div>
+              <div class="course-chip">
+                <span class="course-code mono">CS-318</span>
+                <span class="course-name">Database Management (DBMS)</span>
+              </div>
+            </div>
+
+            <div class="honors-wrap">
+              <span class="honors-label mono">RECOGNITIONS &bull; HACKATHONS</span>
+              <ul class="honors-list">
+                <li>
+                  <span class="honor-rank mono font-display">3RD</span>
+                  <div class="honor-info">
+                    <strong>NeuraHack Competition</strong> &bull; IGNITE 2025
+                    <p class="text-muted">Cracking Problem AI competition award</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="honor-rank mono font-display">PART</span>
+                  <div class="honor-info">
+                    <strong>TechInertia 3.0 Hackathon</strong> &bull; GNIT (IPU)
+                    <p class="text-muted">Collaborative rapid development sprint</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 // EXPERIMENTS / CURRENTLY BUILDING SECTION -->
+    <section class="section experiments-section" id="experiments">
+      <div class="section-container">
+        <div class="section-header" data-scroll-reveal>
+          <div class="section-meta mono">
+            <span class="section-num">05</span>
+            <span class="section-label">/ LAB &bull; EXPLORATION</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title font-display">CURRENTLY BUILDING</h2>
+            <span class="section-count mono">[ CONTINUOUS EXPERIMENTATION ]</span>
+          </div>
+        </div>
+
+        <p class="experiments-intro text-muted" data-scroll-reveal>
+          Beyond production assignments, I operate a personal laboratory for rapid prototyping — stress-testing emerging frameworks, micro-interactions, algorithmic games, and AI workflows.
+        </p>
+
+        <!-- Dynamic Animated Experimental Labels -->
+        <div class="experiments-tape-grid" data-scroll-reveal>
+          <div class="exp-pill magnetic" data-magnetic>
+            <span class="exp-dot"></span>
+            <span class="font-display">DIGITAL PRODUCTS</span>
+            <span class="exp-desc mono">// HIGH-UTILITY CONSUMER TOOLS</span>
+          </div>
+          <div class="exp-pill magnetic" data-magnetic>
+            <span class="exp-dot"></span>
+            <span class="font-display">WEB EXPERIENCES</span>
+            <span class="exp-desc mono">// CINEMATIC MICRO-INTERACTIONS</span>
+          </div>
+          <div class="exp-pill magnetic" data-magnetic>
+            <span class="exp-dot"></span>
+            <span class="font-display">SAAS ARCHITECTURE</span>
+            <span class="exp-desc mono">// MODULAR WORKFLOW PLATFORMS</span>
+          </div>
+          <div class="exp-pill magnetic" data-magnetic>
+            <span class="exp-dot"></span>
+            <span class="font-display">AI EXPERIMENTS</span>
+            <span class="exp-desc mono">// LLM PROMPT WORKFLOWS &amp; AGENTS</span>
+          </div>
+          <div class="exp-pill magnetic" data-magnetic>
+            <span class="exp-dot"></span>
+            <span class="font-display">OPEN SOURCE</span>
+            <span class="exp-desc mono">// GITHUB EXPERIMENTS &amp; LIBRARIES</span>
+          </div>
+          <div class="exp-pill magnetic" data-magnetic>
+            <span class="exp-dot"></span>
+            <span class="font-display">TECH EXPLORATION</span>
+            <span class="exp-desc mono">// PERFORMANCE &amp; CANVAS APIS</span>
+          </div>
+        </div>
+
+        <!-- Interactive Lab Board -->
+        <div class="lab-board" data-scroll-reveal>
+          <div class="lab-row">
+            <span class="lab-idx mono">EXP-01</span>
+            <span class="lab-name font-display">Snake Game &bull; Canvas Physics</span>
+            <span class="lab-detail">Classic arcade recreated with raw Canvas API and frame loops</span>
+            <span class="lab-status mono">SHIPPED</span>
+          </div>
+          <div class="lab-row">
+            <span class="lab-idx mono">EXP-02</span>
+            <span class="lab-name font-display">uQuoto &bull; Dynamic Curation</span>
+            <span class="lab-detail">Lightweight quote curation engine with clipboard synthesis</span>
+            <span class="lab-status mono">SHIPPED</span>
+          </div>
+          <div class="lab-row">
+            <span class="lab-idx mono">EXP-03</span>
+            <span class="lab-name font-display">S Pustak &bull; Digital Reading Portal</span>
+            <span class="lab-detail">Distraction-free literature discovery &amp; book organization UI</span>
+            <span class="lab-status mono">SHIPPED</span>
+          </div>
+          <div class="lab-row">
+            <span class="lab-idx mono">EXP-04</span>
+            <span class="lab-name font-display">SangitPremi &bull; Audio Web Player</span>
+            <span class="lab-detail">Custom HTML5 web audio player with visualizer waveforms</span>
+            <span class="lab-status mono">SHIPPED</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 // CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header" data-scroll-reveal>
+          <div class="section-meta mono">
+            <span class="section-num">06</span>
+            <span class="section-label">/ INITIATE TRANSMISSION</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-title-sub mono">CONNECT WITH VAIBHAV</h2>
+          </div>
+        </div>
+
+        <div class="contact-hero-wrap" data-scroll-reveal>
+          <div class="contact-statement">
+            <span class="statement-line font-display">LET&rsquo;S BUILD</span>
+            <span class="statement-line font-display statement-accent">SOMETHING.</span>
+          </div>
+          <p class="contact-subhead">
+            Open to engineering internships, junior developer roles, hackathon collaborations, and ambitious digital ventures.
+          </p>
+        </div>
+
+        <!-- Contact Cards / Direct Channels -->
+        <div class="contact-channels-grid" data-scroll-reveal>
+          <!-- Email -->
+          <a href="mailto:vaibhavsengar02@gmail.com" class="channel-card magnetic" data-magnetic>
+            <div class="channel-top mono">
+              <span>DIRECT EMAIL</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <div class="channel-value">vaibhavsengar02@gmail.com</div>
+            <div class="channel-footer mono">CLICK TO SEND DIRECT EMAIL</div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/vaibhavsengar/" target="_blank" rel="noopener noreferrer" class="channel-card magnetic" data-magnetic>
+            <div class="channel-top mono">
+              <span>LINKEDIN</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <div class="channel-value">linkedin.com/in/vaibhavsengar</div>
+            <div class="channel-footer mono">PROFESSIONAL NETWORK &bull; MESSAGES</div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/VAIBHAV-SENGAR-Git" target="_blank" rel="noopener noreferrer" class="channel-card magnetic" data-magnetic>
+            <div class="channel-top mono">
+              <span>GITHUB</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <div class="channel-value">github.com/VAIBHAV-SENGAR-Git</div>
+            <div class="channel-footer mono">REPOSITORIES &bull; EXPERIMENTS &bull; COMMITS</div>
+          </a>
+        </div>
+
+        <!-- Telephone & Location Bar -->
+        <div class="contact-meta-bar mono" data-scroll-reveal>
+          <div class="meta-bar-item">
+            <span class="meta-bar-label">TELEPHONE:</span>
+            <a href="tel:+918368089599" class="meta-bar-val">+91 8368089599</a>
+          </div>
+          <div class="meta-bar-item">
+            <span class="meta-bar-label">LOCATION:</span>
+            <span class="meta-bar-val">Greater Noida, Uttar Pradesh, India</span>
+          </div>
+          <div class="meta-bar-item">
+            <span class="meta-bar-label">TIMEZONE:</span>
+            <span class="meta-bar-val">IST (UTC +5:30)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="footer-logo font-display">VAIBHAV SENGAR</span>
+          <span class="footer-copy mono">&copy; 2026. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="footer-center mono">
+          BUILT WITH CURIOSITY &amp; SYSTEMATIC CRAFT.
+        </div>
+        <div class="footer-right">
+          <a href="#hero" class="back-to-top magnetic" data-magnetic>
+            <span class="mono">TOP</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 11V3M7 3L3 7M7 3L11 7" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
